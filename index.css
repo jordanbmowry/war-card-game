@@ -1,9 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
+  background-image: url('./img/table.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Exo 2', sans-serif;
+  overflow: hidden;
 }
 
 .hidden {
   display: none;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
+
+.btn {
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+  font-size: 1.25em;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  background-color: #fff100;
+  transition: background-color 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #ddd206;
+}
+
+.new-deck-btn {
+  margin-top: 2rem;
+}
+
+.draw-two-cards-btn {
+  margin-bottom: 2rem;
+}
+
+img {
+  margin: 1em;
 }
