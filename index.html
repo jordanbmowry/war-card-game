@@ -13,13 +13,23 @@
     <script src="index.js" defer></script>
   </head>
   <body>
-    <div class="flex-col">
-      <button class="new-deck-btn btn">New Deck</button>
-      <div class="cards-container">
-        <div class="card-slot"></div>
-        <div class="card-slot"></div>
+    <div class="flex-col container">
+      <div class="flex-row">
+        <button class="new-deck-btn btn">New Deck</button>
+        <h2 class="remaining-cards"></h2>
       </div>
-      <button class="draw-two-cards-btn btn">Draw Two Cards</button>
+      <h1 class="header">Game of War</h1>
+      <div class="cards-container">
+        <div class="flex-col">
+          <h3 class="computer-score"></h3>
+          <div class="card-slot fist-card-slot"></div>
+        </div>
+        <div class="flex-col">
+          <div class="card-slot"></div>
+          <h3 class="player-score"></h3>
+        </div>
+      </div>
+      <button class="draw-two-cards-btn btn" disabled>Draw Two Cards</button>
     </div>
   </body>
 </html>

@@ -11,19 +11,33 @@ body {
   background-size: cover;
   height: 100%;
   font-family: 'Exo 2', sans-serif;
-  overflow: hidden;
+  color: #fff;
+  text-align: center;
 }
 
 .hidden {
   display: none;
 }
 
+.container {
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .flex-col {
   display: flex;
   flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 100vh;
+  width: 100%;
+}
+
+.remaining-cards {
+  margin-right: 1em;
 }
 
 .btn {
@@ -37,6 +51,11 @@ body {
   transition: background-color 0.2s;
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .btn:hover,
 .btn:focus {
   background-color: #ddd206;
@@ -47,7 +66,6 @@ body {
 }
 
 .draw-two-cards-btn {
-  margin-bottom: 2rem;
   align-self: stretch;
 }
 
@@ -58,7 +76,7 @@ body {
   width: calc(15em * 5 / 7);
 }
 
-.card-slot:nth-of-type(1) {
+.fist-card-slot {
   margin-bottom: 3.25em;
 }
 
