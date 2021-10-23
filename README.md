@@ -1,5 +1,7 @@
 # War Card Game
 
+This project is from Scrimba's The Frontend Devoloper Career Path. 
+
 ## Supporting Scrimba
 
 Since 2017, we have created over 20 free courses on Scrimba, and we're going to
